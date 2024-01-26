@@ -1,5 +1,6 @@
 import { Aldrich } from "next/font/google";
 import "./globals.css";
+// import Navbar from "../../components/Navbar";
 
 const aldrich = Aldrich({  weight: ['400'], subsets: ["latin"] });
 
