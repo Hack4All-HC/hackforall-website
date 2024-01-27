@@ -16,7 +16,7 @@ export default function Home() {
         &nbsp;
         <a className={styles.main_text}>All</a>
       </div>
-      <a>Hack 4 free, 4 all, 4 everyone</a>
+      <a className={styles.subtext}>Hack 4 free, 4 all, 4 everyone</a>
     </b></h1>
     </div>
     </main>

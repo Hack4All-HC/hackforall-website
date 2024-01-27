@@ -47,6 +47,11 @@
   letter-spacing: 1vw;
 }
 
+.subtext {
+  font-size: 2vw;
+  font-weight: 200;
+}
+
 .main_text:hover {
   color: #2c3ba1;
   cursor: pointer;
@@ -91,10 +96,31 @@
   z-index: 10;
   top: -3vh;
   left: .25%;
+  width: 7.5%;
+  height: 15%;
 }
 
 /* Mobile */
 @media (max-width: 700px) {
+
+  .logo {
+    position: absolute;
+    z-index: 10;
+    top: -3vh;
+    left: .25%;
+    width: 25%;
+    height: 15%;
+  }
+
+  .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 2vh 3vw;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
   .content {
     padding: 4rem;
   }
@@ -114,8 +140,9 @@
     margin-bottom: 0.5rem;
   }
 
+  
   .center {
-    padding: 8rem 0 6rem;
+    padding: 9rem 0 6rem;
   }
 
   .center::before {
@@ -128,6 +155,15 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 10;
+    top: -3vh;
+    left: .25%;
+    width: 30%;
+    height: 15%;
   }
 }
 
