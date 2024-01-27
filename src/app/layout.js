@@ -1,6 +1,7 @@
 import { Aldrich } from "next/font/google";
 import "./globals.css";
-// import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar";
+import styles from "../../src/app/page.module.css";
 
 const aldrich = Aldrich({  weight: ['400'], subsets: ["latin"] });
 
@@ -12,7 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={aldrich.className}>{children}</body>
+      <body className={aldrich.className}>
+        <Navbar />
+        <a href=""><img src="Hack4All-centered.png" alt="Home" width="7%" height="15%" className={styles.logo}></img></a>
+        {children}
+        </body>
     </html>
   );
 }

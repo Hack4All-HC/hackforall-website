@@ -6,16 +6,18 @@ const aldrich = Aldrich({  weight: ['400'], subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`${styles.main} ${styles.center}`}>
+    <main className={`${styles.main} ${aldrich.Aldrich}`}>
+    <div className={styles.center}>
     <h1><b>
       <div className={styles.main_text_div}>
-        <p className={styles.main_text}>Hack&nbsp;&nbsp;</p>
+        <a className={styles.main_text}>Hack&nbsp;&nbsp;</a>
         &nbsp;
-        <p className={styles.main_text}>4&nbsp;&nbsp;</p>
+        <a className={styles.main_text}>4&nbsp;&nbsp;</a>
         &nbsp;
-        <p className={styles.main_text}>All</p>
+        <a className={styles.main_text}>All</a>
       </div>
     </b></h1>
+    </div>
     </main>
   );
 }

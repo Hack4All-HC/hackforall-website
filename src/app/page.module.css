@@ -7,8 +7,39 @@
   min-height: 100vh;
 }
 
+/* Nav Start */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(234, 234, 234, 1);
+  font-size: 2vh;
+  font-family: 'Lexend', sans-serif;
+  margin-left: auto;
+  position: relative;
+}
+
+.topnav a {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 2vh 1.5vw;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(255, 0, 0);
+}
+
+.topnav a.active {
+  background-color: #fac71f;
+  color: rgb(0, 0, 0);
+}
+
+/* Nav End */
+
 .main_text {
-  padding: 0.75rem;
+  padding-top: 40px;
   font-size: 9vw;
   font-style: normal;
   font-weight: 500;
@@ -43,7 +74,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 9rem 2rem;
 }
 
 .center::before,
@@ -56,7 +87,10 @@
 }
 
 .logo {
-  position: relative;
+  position: absolute;
+  z-index: 10;
+  top: -3vh;
+  left: .25%;
 }
 
 /* Mobile */
