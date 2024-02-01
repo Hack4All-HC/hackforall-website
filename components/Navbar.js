@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
       <div className={`${styles.topnav} ${lexend.Lexend}`}>
         <b>
-          <a href="#sponsors" className={styles.topnav_text}>Sponsors Us</a>
+          <a href="#sponsors" className={styles.topnav_text}>Sponsor Us</a>
           <a href="#events" className={styles.topnav_text}>Events</a>
           <a href="https://hcb.hackclub.com/donations/start/hack4all" className={styles.topnav_text}>Donate</a>
         </b>

@@ -38,6 +38,24 @@
 
 /* Nav End */
 
+.hvr {
+  z-index: 0;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr:hover, .hvr-grow:focus, .hvr-grow:active {
+  z-index: 5;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .main_text {
   padding-top: 40px;
   font-size: 9vw;
@@ -45,6 +63,19 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: 1vw;
+}
+
+.filler {
+  padding-top: 40px;
+  font-size: 9vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1vw;
+}
+
+.filler:hover {
+  cursor: default;
 }
 
 .subtext {

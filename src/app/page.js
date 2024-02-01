@@ -10,11 +10,13 @@ export default function Home() {
     <div className={styles.center}>
     <h1><b>
       <div className={styles.main_text_div}>
-        <a className={styles.main_text}>Hack&nbsp;&nbsp;</a>
+        <a className={`${styles.main_text} ${styles.hvr}`}>Hack</a>
+        <a className={styles.filler}>&nbsp;&nbsp;</a>
         &nbsp;
-        <a className={styles.main_text}>4&nbsp;&nbsp;</a>
+        <a className={`${styles.main_text} ${styles.hvr}`}>4</a>
+        <a className={styles.filler}>&nbsp;&nbsp;</a>
         &nbsp;
-        <a className={styles.main_text}>All</a>
+        <a className={`${styles.main_text} ${styles.hvr}`}>All</a>
       </div>
       <a className={styles.subtext}>Hack 4 free, 4 all, 4 everyone</a>
     </b></h1>
