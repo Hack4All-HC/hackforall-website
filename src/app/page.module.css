@@ -1,3 +1,49 @@
+@media (prefers-color-scheme: dark) {
+  .topnav {
+    background-color: rgb(87, 87, 87);
+  }
+
+  .arrow {
+    filter: invert(100%);
+  }
+
+  .mission_parts {
+    filter: invert(100%);
+  }
+
+  .logo {
+    filter: invert(100%);
+  }
+
+  .topnav a {
+    color: #2c333a;
+  }
+  
+  .topnav a:hover {
+    background-color: #a0a0a0;
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .topnav {
+    background-color: rgb(182, 182, 182);
+  }
+
+  .arrow {
+    filter: invert(100%);
+  }
+
+  .topnav a {
+    color: #2c333a;
+  }
+  
+  .topnav a:hover {
+    background-color: #a0a0a0;
+    color: rgb(0, 0, 0);
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -10,7 +56,7 @@
 /* Nav Start */
 .topnav {
   overflow: hidden;
-  background-color: rgba(234, 234, 234, 1);
+  /* background-color: rgb(238, 237, 237); */
   font-size: 2vh;
   font-family: 'Lexend', sans-serif;
   margin-left: auto;
@@ -19,24 +65,90 @@
 
 .topnav a {
   float: right;
-  color: #000000;
   text-align: center;
   padding: 2vh 1.5vw;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: rgb(255, 0, 0);
-}
-
-.topnav a.active {
-  background-color: #fac71f;
-  color: rgb(0, 0, 0);
-}
-
 /* Nav End */
+
+/* Fade Start */
+
+/* Fade End */
+
+/* scroll start */
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: -45px;
+  left: 55%;
+  margin-left: -20px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../public/arrow.png);
+  background-size: contain;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.fade {
+  opacity:0;
+  transition: 1s
+}
+/* Scroll End */
 
 .hvr {
   z-index: 0;
@@ -56,13 +168,32 @@
   transform: scale(1.1);
 }
 
-.main_text {
+.hack {
   padding-top: 40px;
-  font-size: 9vw;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 1vw;
+  width: 25vw;
+  height: 25vh;
+  cursor: pointer;
+}
+
+.four {
+  padding-top: 40px;
+  width: 7vw;
+  height: 25vh;
+  cursor: pointer;
+}
+
+.all {
+  padding-top: 40px;
+  width: 20vw;
+  height: 25vh;
+  cursor: pointer;
+}
+
+.topscroll {
+  color: #d4d2d0;
+  position: absolute;
+  bottom: -10vh;
+  font-size: 35px;
 }
 
 .filler {
@@ -81,6 +212,7 @@
 .subtext {
   font-size: 2vw;
   font-weight: 200;
+  color: #d4d2d0;
 }
 
 .main_text:hover {
@@ -89,8 +221,9 @@
 }
 
 .main_text_div {
-  display: flex;
   flex-direction: row;
+  display: flex;
+  padding-top: 18vh;
 }
 
 .code {
@@ -110,7 +243,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 9rem 2rem;
+  /* padding: 9rem 2rem; */
 }
 
 .center::before,
@@ -133,6 +266,40 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+
+  .topscroll {
+    color: #d4d2d0;
+    position: absolute;
+    padding-top: 65vh;
+    font-size: 20px;
+  }
+
+  .main_text_div {
+    flex-direction: row;
+    display: flex;
+    padding-top: 5vh;
+  }
+
+  .hack {
+    padding-top: 40px;
+    width: 26vw;
+    height: 12vh;
+    cursor: pointer;
+  }
+  
+  .four {
+    padding-top: 40px;
+    width: 9vw;
+    height: 12vh;
+    cursor: pointer;
+  }
+  
+  .all {
+    padding-top: 40px;
+    width: 21vw;
+    height: 12vh;
+    cursor: pointer;
+  }
 
   .logo {
     position: absolute;

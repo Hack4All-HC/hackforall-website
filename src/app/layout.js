@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={aldrich.className}>
         <Navbar />
-        <a href=""><img src="Hack4All-centered.png" alt="Home" className={`${styles.logo} ${styles.hvr}`}></img></a>
+        <a href="/"><img src="Hack4All-centered.png" alt="Home" className={`${styles.logo} ${styles.hvr}`}></img></a>
         {children}
         </body>
     </html>
